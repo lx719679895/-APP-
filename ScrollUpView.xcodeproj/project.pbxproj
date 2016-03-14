@@ -15,6 +15,9 @@
 		4E88359A1C969ECD00A75D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8835981C969ECD00A75D82 /* LaunchScreen.storyboard */; };
 		4E8835A51C969ECD00A75D82 /* ScrollUpViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8835A41C969ECD00A75D82 /* ScrollUpViewTests.m */; };
 		4E8835B01C969ECD00A75D82 /* ScrollUpViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8835AF1C969ECD00A75D82 /* ScrollUpViewUITests.m */; };
+		4E8835C01C96A01800A75D82 /* ScrollUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8835BF1C96A01800A75D82 /* ScrollUpView.m */; };
+		4E8835C31C96A11E00A75D82 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8835C21C96A11E00A75D82 /* UIColor+Expanded.m */; };
+		4E8835C61C96B18200A75D82 /* NoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8835C51C96B18200A75D82 /* NoticeModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		4E8835AB1C969ECD00A75D82 /* ScrollUpViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollUpViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8835AF1C969ECD00A75D82 /* ScrollUpViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollUpViewUITests.m; sourceTree = "<group>"; };
 		4E8835B11C969ECD00A75D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E8835BE1C96A01800A75D82 /* ScrollUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollUpView.h; sourceTree = "<group>"; };
+		4E8835BF1C96A01800A75D82 /* ScrollUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollUpView.m; sourceTree = "<group>"; };
+		4E8835C11C96A11E00A75D82 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
+		4E8835C21C96A11E00A75D82 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
+		4E8835C41C96B18200A75D82 /* NoticeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeModel.h; sourceTree = "<group>"; };
+		4E8835C51C96B18200A75D82 /* NoticeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		4E8835891C969ECD00A75D82 /* ScrollUpView */ = {
 			isa = PBXGroup;
 			children = (
+				4E8835BD1C969FD100A75D82 /* resources */,
 				4E88358D1C969ECD00A75D82 /* AppDelegate.h */,
 				4E88358E1C969ECD00A75D82 /* AppDelegate.m */,
 				4E8835901C969ECD00A75D82 /* ViewController.h */,
@@ -138,6 +148,19 @@
 				4E8835B11C969ECD00A75D82 /* Info.plist */,
 			);
 			path = ScrollUpViewUITests;
+			sourceTree = "<group>";
+		};
+		4E8835BD1C969FD100A75D82 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E8835C41C96B18200A75D82 /* NoticeModel.h */,
+				4E8835C51C96B18200A75D82 /* NoticeModel.m */,
+				4E8835BE1C96A01800A75D82 /* ScrollUpView.h */,
+				4E8835BF1C96A01800A75D82 /* ScrollUpView.m */,
+				4E8835C11C96A11E00A75D82 /* UIColor+Expanded.h */,
+				4E8835C21C96A11E00A75D82 /* UIColor+Expanded.m */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8835C01C96A01800A75D82 /* ScrollUpView.m in Sources */,
 				4E8835921C969ECD00A75D82 /* ViewController.m in Sources */,
 				4E88358F1C969ECD00A75D82 /* AppDelegate.m in Sources */,
+				4E8835C61C96B18200A75D82 /* NoticeModel.m in Sources */,
 				4E88358C1C969ECD00A75D82 /* main.m in Sources */,
+				4E8835C31C96A11E00A75D82 /* UIColor+Expanded.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
