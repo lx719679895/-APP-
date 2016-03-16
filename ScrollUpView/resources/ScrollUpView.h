@@ -25,7 +25,7 @@
  *
  *  @param dataArr 数组
  */
-- (void)setVerticalShowDataArr:(NSMutableArray *)dataArr;
+- (void)setScrollUpViewDatas:(NSMutableArray *)dataArr;
 
 /**
  *  启动定时器开始滚动

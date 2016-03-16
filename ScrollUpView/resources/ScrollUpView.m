@@ -27,6 +27,15 @@
 
 @implementation ScrollUpView
 
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self createUI];
+    }
+    return self;
+}
+
 - (void)createUI
 {
     count = 0;
@@ -43,7 +52,7 @@
     [self addGestureRecognizer:tap];
 }
 
-- (void)setVerticalShowDataArr:(NSMutableArray *)dataArr
+- (void)setScrollUpViewDatas:(NSMutableArray *)dataArr
 {
     _dataArr = dataArr;
     self.currentLabel.attributedText = _dataArr[count];
