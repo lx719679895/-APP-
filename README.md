@@ -8,7 +8,13 @@
 ### 设置UI
     - (void)creatView
     {
+    //如果用代码手写scrollUpView的frame直接用下面初始化方法，
+    //_scrollUpView = [[ScrollUpView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 36)];
+    
+    //xib设置scrollUpView需要调用createUI方法
     [_scrollUpView createUI];
+    
+    //scrollUpView点击回调
     _scrollUpView.clickBlock = ^(NSInteger index){
         NoticeModel *noticeModel = _mutArr[index];
         NSLog(@"恭喜%@获得了%@",noticeModel.nickname,noticeModel.title);
@@ -34,5 +40,6 @@
         [datas addObject:attString];
     }
     
-    [_scrollUpView setVerticalShowDataArr:datas];
+    //设置scrollUpView数据源
+    [_scrollUpView setScrollUpViewDatas:datas];
     }
